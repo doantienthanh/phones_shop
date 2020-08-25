@@ -21,12 +21,13 @@
 <i class='fas fa-user-alt icon-users'></i>
  </div>
     </div>
-<form action="" method="post" class='body-form'>
- <span class='text-group'><i class="fas fa-user-alt icons-text"></i>&ensp;&ensp;<input class='text-input' ></span>
- <span class='text-group'><i class="fas fa-user-alt icons-text"></i>&ensp;&ensp;<input class='text-input'></span>
+<form action="../../Controller/Auth/loginControll.php"  method="POST" class='body-form'>
+ <span class='text-group'><i class="fas fa-user-alt icons-text"></i>&ensp;&ensp;<input class='text-input' type="text" name="userName"></span>
+ <span class='text-group'><i class="fas fa-lock icons-text"></i>&ensp;&ensp;<input class='text-input' type="password" name="password"></span>
+ <button class='btn-login' name="btnLogin" type="submit">Login</button>
  </form>
  <div class='footer-formLogin'>
-    thanh
+    
  </div>
 </div>
 </div>
