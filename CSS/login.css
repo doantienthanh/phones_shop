@@ -1,0 +1,104 @@
+.login-page{
+width: 100%;
+height: 886px;
+background-color: bisque;
+padding-top: 8%;
+}
+.content-login{
+    width: 26%;
+    margin-left: 37%;
+    background: linear-gradient(to bottom, #ff99cc  39%,#33ccff 86%);
+    height: 70%;
+    display: block;
+}
+.header-formLogin{
+width: 100%;
+height: 40%;
+padding-top: 10%;
+padding-left: 35%;
+}
+.body-form{
+    width: 100%;
+    height: 40%;
+    display: block;
+    text-align: center;
+    padding-top: 5%;
+}
+.footer-formLogin{
+    height: 20%;
+}
+.content-header{
+    color: red;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon-users{
+    padding: 5%;
+}
+@media screen and (min-width: 1200px) {
+    .content-header{
+        width: 50%;
+        height: 80%;
+    }
+    .icon-users{
+        font-size: 600%;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .content-header {
+        width: 50%;
+        height: 70%;
+    }
+    .icon-users {
+        font-size:400%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .content-header {
+        width: 50%;
+        height: 60%;
+    }
+    .icon-users {
+        font-size:300%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .content-header {
+        width: 50%;
+        height:30%;
+    }
+    .icon-users {
+        font-size:200%;
+    }
+  }
+  .text-group{
+    display: flex;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    height: 1cm;
+    align-items:center;
+    justify-content:flex-end;
+    border: none;
+    outline: none;
+  }
+  .icons-text{
+      text-align: center;
+      font-size: 24px;
+       margin-left: 5%;
+  }
+.text-input{
+    width:100%;
+    height: 1cm;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid red;
+    background:transparent;
+}
