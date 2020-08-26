@@ -12,15 +12,43 @@ function login($useData)
     $result = $useData->query($selectUser);
     if ($result->num_rows > 0) {
         while ($user = $result->fetch_assoc()) {
-            if ($user['position'] == 'user') {
-                header('location: ../../View/Users/homePage.php');
-            } elseif ($user['position'] == 'admin') {
-                header('location: ../../View/Admin/dashboard.php');
-            }
+                $id_user=json_encode($user['id']);
+                $id_enCode=base64_encode($id_user);
+                $cookie_name='id_user';
+                setcookie($cookie_name,$id_enCode,time() + 3600, '/');
         }
     } else {
         echo '<script language="javascript">';
         echo 'alert("Không tìm thấy tài khoản của bạn!")';
         echo '</script>';
+    }
+}
+if(isset($_COOKIE['id_user'])){
+  getUser($useData);
+}
+function getUser($useData){
+    $id_cookie=$_COOKIE['id_user'];
+    $id_enCode=base64_decode($id_cookie);
+    $id_user=json_decode($id_enCode);
+    $getUser="SELECT * FROM users WHERE id=$id_user";
+    $resultUser = $useData->query($getUser);
+    if($resultUser){
+        while ($user = $resultUser->fetch_assoc()) {
+            $inforuser= (object)[
+                'name'=> $user['full_name'],
+                'userName'=>$user['user_name'],
+                'address'=>$user['address'],
+                'picture'=>$user['picture']
+            ];
+            $_SESSION['getUser']=json_encode($inforuser);
+            echo  json_decode(json_encode( $_SESSION['getUser'])->name);  
+            // if($user['position']=='admin'){
+            //     header('location: ../../View/Admin/dashboard.php');
+            // }else{
+            //     header('location: ../../View/Users/homePage.php');
+            // }
+        }
+    }else{
+       echo 'khong tim thay';
     }
 }

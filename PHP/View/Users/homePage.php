@@ -1,3 +1,12 @@
+<?php 
+session_start();
+if(isset($_SESSION['getUser'])){
+    $users=json_decode(json_encode($_SESSION['getUser']));
+    foreach($users as $user){
+        echo $user['address'];
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
