@@ -25,5 +25,4 @@ if($check_users_table === FALSE)
       }
       mysqli_close($useData);
 }
-
 ?>

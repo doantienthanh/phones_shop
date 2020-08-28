@@ -1,8 +1,8 @@
+
 .login-page{
 width: 100%;
-height: 886px;
-background-color: bisque;
-padding-top: 8%;
+height: 650px;
+padding-top: 5%;
 }
 .content-login{
     width: 26%;
@@ -38,7 +38,7 @@ padding-left: 35%;
 }
 
 .icon-users{
-    padding: 5%;
+    padding: 2%;
 }
 @media screen and (min-width: 1200px) {
     .content-header{
@@ -46,7 +46,7 @@ padding-left: 35%;
         height: 85%;
     }
     .icon-users{
-        font-size: 600%;
+        font-size: 400%;
     }
     
   }

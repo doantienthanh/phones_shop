@@ -1,7 +1,6 @@
 .header-homePage{
     width: 100%;
     height: 1.3cm;
-    background-color:darkslategray;
     font-size: 20px;
     color: white;
     box-sizing: border-box;
@@ -18,6 +17,7 @@
     width: 50%;
     align-items:center;
    justify-content:flex-end;
+   vertical-align: middle;
 }
 .right-header a{
 color: white;
@@ -29,7 +29,163 @@ margin-right: 2%;
     height: 1cm;
     margin-right: 2%;
 }
+.btn-logout{
+    width: 100px;
+    height: 100px;
+}
 .btnSingin{
     font-size: 34px;
     margin-right: 5%;
 }
+.icons-logout{
+    float: right;
+    font-size: 34px;
+    height: 1cm;
+    margin-right: 2%;
+}
+
+.body-home{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+}
+.btn-logout{
+    text-transform: none;
+    background: none;
+    outline: none;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+}
+.image-user{
+    border:2px solid whitesmoke;
+    border-radius:50%;
+}
+
+@media screen and (min-width: 1400px) {
+   .image-user{
+    width:46px;
+    height:46px;
+   }
+   .btn-logout{
+       width: 50px;
+       height: 50px;
+       font-size: 30px;
+   }
+   .name-shop{
+     font-size: 24px;
+   }
+   .icons-logout{
+    font-size: 40px;
+}
+}
+@media screen and (max-width: 1400px) {
+    .image-user{
+     width:40px;
+     height:40px;
+    }
+    .btn-logout{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .name-shop{
+        font-size: 24px;
+           }
+           .icons-logout{
+            font-size: 40px;
+        }
+ }
+ @media screen and (max-width: 1000px) {
+    .image-user{
+     width:35px;
+     height:35px;
+    } 
+    .btn-logout{
+        width: 45px;
+        height: 45px;
+        font-size: 31px;
+        margin-top: 5px;
+    }
+    .name-shop{
+        font-size: 22px;
+        }
+        .icons-logout{
+            font-size: 35px;
+        }
+ }
+ @media screen and (max-width: 800px) {
+    .image-user{
+     width:30px;
+     height:30px;
+    }
+    .btn-logout{
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+        margin-top: 9px;
+    }
+    .name-shop{
+        font-size: 20px;
+           }
+           .icons-logout{
+            font-size: 30px;
+        }
+ }
+ @media screen and (max-width: 600px) {
+    .image-user{
+     width:25px;
+     height:25px;
+    }
+    .btn-logout{
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        margin-top: 13px;
+    }
+    .name-shop{
+        font-size: 18px;
+           }
+           .icons-logout{
+            font-size: 25px;
+        }
+ }
+ @media screen and (max-width: 400px) {
+    .image-user{
+     width:20px;
+     height:20px;
+    }
+    .btn-logout{
+        width: 30px;
+        height: 30px;
+        font-size: 23px;
+        margin-top: 15px;
+    }
+    .name-shop{
+        font-size: 16px;
+           }
+           .icons-logout{
+            font-size: 20px;
+        }
+ }
+ @media screen and (max-width: 200px) {
+    .image-user{
+     width:18px;
+     height:18px;
+    }
+    .btn-logout{
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        margin-top: 15px;
+        
+    }
+    .name-shop{
+        font-size: 14px;
+           }
+           .icons-logout{
+            font-size: 15px;
+        }
+ }
+
+

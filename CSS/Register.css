@@ -1,0 +1,133 @@
+.page-register{
+    width: 100%;
+    height: 655px;
+    padding-top:1%;
+}
+.form-register{
+    width: 34%;
+    margin-left: 33%;
+    background: linear-gradient(to bottom, #ff99cc  39%,#33ccff 86%);
+    height: 570px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px inset;
+}
+.header-register{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.body-register{
+    width: 100%;
+    height:80%;
+    display: block;
+}
+.bottom-register{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.lable-input{
+    margin-left: 10%;
+}
+.text-input-register{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    outline: none;
+    height: 40px;
+    border-color: skyblue;
+    border-radius: 20px;
+}
+.btn-signup{
+    margin-top:20px;
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ff99cc;
+    margin-left: 20%;
+    outline: none;
+    font-size: 24px;
+    border: none;
+}
+.btn-signup:hover{
+    width: 66%;
+    margin-top:18px;
+    margin-left: 17%;
+    height: 44px;
+    font-size: 28px;
+    border: none;
+    outline: none;
+}
+/* reposive width */
+@media screen and (min-width: 1500px) {
+    .text-signin{
+        font-size:80px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .text-signin{
+        font-size:80px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .text-signin{
+        font-size:70px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .text-signin{
+        font-size:60px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .text-signin{
+        font-size:50px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .text-signin{
+        font-size:40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .text-signin{
+        font-size:30px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .text-signin{
+        font-size:20px;
+    }
+}
+/* reposive height */
+@media screen and (min-height: 600px) {
+    .page-register{
+        height: 655px;
+        padding-top:5%;
+    }
+}
+@media screen and (max-height: 600px) {
+    .page-register{
+        height: 655px;
+        padding-top:5%;
+    }
+}
+@media screen and (max-height: 450px) {
+    .page-register{
+        height: 500px;
+        padding-top:5%;
+    }
+}
+@media screen and (max-height: 300px) {
+    .page-register{
+        height: 400px;
+        padding-top:5%;
+    }
+}
+@media screen and (max-height: 150px) {
+    .page-register{
+        height: 300px;
+        padding-top:5%;
+    }
+}

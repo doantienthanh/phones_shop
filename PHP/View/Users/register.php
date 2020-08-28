@@ -1,18 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<title>Title</title>
-</head>
-<body>
-<?php include('../Partials/header.php'); ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<?php
+ include('../Partials/header.php'); 
+?>
+<div class="page-register">
+<div class="register">
+ <div class="form-register">
+       <div class="header-register">
+           <h1><b class="text-signin">SIGN IN</b></h1>
+       </div>
+       <form class="body-register">
+       <label for="full-name" class="lable-input"><b>full your name:</b><span>(<b style="color: red;">*</b>)</span></label>
+       <input type="text" class="text-input-register">
+       <label for="full-name" class="lable-input"><b>address:</b><span>(<b style="color: red;">*</b>)</span></label>
+       <input type="text" class="text-input-register">
+       <label for="full-name" class="lable-input"><b>email:</b><span>(<b style="color: red;">*</b>)</span></label>
+       <input type="text" class="text-input-register">
+       <label for="full-name" class="lable-input"><b>username:</b><span>(<b style="color: red;">*</b>)</span></label>
+       <input type="text" class="text-input-register">
+       <label for="full-name" class="lable-input"><b>passwords:</b><span>(<b style="color: red;">*</b>)</span></label>
+       <input type="text" class="text-input-register">
+       <button class="btn-signup">sign up</button>
+       </form>
+       <div class="bottom-register">
+       </div>
+ </div>
+</div>
+</div>
 </body>
 </html>
