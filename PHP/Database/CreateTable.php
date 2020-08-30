@@ -2,6 +2,7 @@
 require_once('ConnectData.php');
 $nameDataBase='phones_shop';
 $useData=new mysqli($servername, $username, $password,$nameDataBase);
+// table users
 $create_users_table='CREATE TABLE users(
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     full_name VARCHAR(100),
@@ -25,4 +26,12 @@ if($check_users_table === FALSE)
       }
       mysqli_close($useData);
 }
+// table products
+// $products="CREATE TABLE IF NOT EXISTS products(
+//       id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+//       id_categories INT not null,
+//       id_brands INT not null,
+//       name_products VARCHAR(200) not null,
+       
+// )";
 ?>

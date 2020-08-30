@@ -3,7 +3,7 @@ require_once('../index.php');
 ?>
 <div class="header-homePage">
  <ul class="left-header">
- <p class="name-shop">thanhdoanShops</p>
+ <a href="../Users/homePage.php" class="link-romove-home"><p class="name-shop">thanhdoanShops</p></a>
  </ul>
  <ul class="right-header">
 <?php

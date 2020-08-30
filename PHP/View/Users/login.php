@@ -12,6 +12,11 @@
 <form action="../../Controller/Auth/loginControll.php"  method="POST" class='body-form'>
  <span class='text-group'><i class="fas fa-user-alt icons-text"></i>&ensp;&ensp;<input class='text-input' type="text" name="userName"></span>
  <span class='text-group'><i class="fas fa-lock icons-text"></i>&ensp;&ensp;<input class='text-input' type="password" name="password"></span>
+ <?php
+  if(isset($_GET['errors'])){
+    echo "<b style='color:red;margin-left:5%;'>".$_GET['errors']."</b>";
+   } 
+ ?>
  <button class='btn-login' name="btnLogin" type="submit">Login</button>
  </form>
  <div class='footer-formLogin'>

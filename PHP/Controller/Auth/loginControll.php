@@ -9,7 +9,8 @@ function login($useData)
 {
     $userName = $_POST['userName'];
     $password = $_POST['password'];
-    $selectUser = "SELECT * FROM users WHERE email='$userName' OR user_name='$userName' AND password='$password'";
+    $password_enCode=base64_encode($password);
+    $selectUser = "SELECT * FROM users WHERE email='$userName' OR user_name='$userName' AND password='$password_enCode'";
     $result = $useData->query($selectUser);
     if ($result->num_rows > 0) {
         while ($user = $result->fetch_assoc()) {
@@ -23,13 +24,10 @@ function login($useData)
                 }
         }
     } else {
-        echo '<script language="javascript">';
-        echo 'alert("Không tìm thấy tài khoản của bạn!")';
-        echo '</script>';
-        header('location:../../View/Users/homePage.php');
+        $errors="Login failed !";
+        header("location:../../View/Users/login.php?errors=$errors");
     }
 }
-     
 
 // logout
 if(isset($_POST['btnLogout'])){
