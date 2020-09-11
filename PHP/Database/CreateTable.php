@@ -16,22 +16,37 @@ $create_users_table='CREATE TABLE users(
     registion_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
    
 )';
-$check_users_table = mysqli_query($useData,'select * from users LIMIT 1');
-if($check_users_table === FALSE)
-{
-    if (mysqli_query($useData,$create_users_table) === TRUE) {
-        echo "Table users created successfully ! </br>";
-      } else {
-        echo "Error creating table: " .mysqli_error($useData);
-      }
-      mysqli_close($useData);
-}
+mysqli_query($useData,$create_users_table);
+// create table category
+$create_category_table='CREATE TABLE IF NOT EXISTS categories(
+   id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   name_category VARCHAR(100) NOT NULL UNIQUE,
+   date_start DATE
+)';
+mysqli_query($useData,$create_category_table);
+//  table Brands
+$create_brands_table='CREATE TABLE IF NOT EXISTS brands(
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   name_brands VARCHAR(100) NOT NULL UNIQUE,
+   date_start DATE
+)';
+mysqli_query($useData,$create_brands_table);
 // table products
-// $products="CREATE TABLE IF NOT EXISTS products(
-//       id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-//       id_categories INT not null,
-//       id_brands INT not null,
-//       name_products VARCHAR(200) not null,
-       
-// )";
+$create_products_table='CREATE TABLE IF NOT EXISTS products(
+      id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+      id_categories INT NOT NULL,
+      id_brands INT NOT NULL,
+      name_products VARCHAR(200)NOT NULL UNIQUE,
+      image_products VARCHAR(200)NOT NULL UNIQUE,
+      quantity_products INT NOT NULL,
+      price_products float NOT NULL,
+      old_price_products float,
+      discount int,
+      description VARCHAR(100),
+      status BOOLEAN,
+      date_start DATE NOT NULL,
+      FOREIGN KEY (id_categories) REFERENCES categories(id) ON DELETE CASCADE ,
+      FOREIGN KEY (id_brands) REFERENCES brands(id) ON DELETE CASCADE 
+)';
+mysqli_query($useData,$create_products_table);
 ?>

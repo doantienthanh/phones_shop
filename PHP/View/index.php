@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../../../CSS/HomePage.css">
 <link rel="stylesheet" href="../../../CSS/Login.css">
 <link rel="stylesheet" href="../../../Css/Register.css">
+<link rel="stylesheet" href="../../../Css/Body_HomePage.css">
 <title>shop phones</title>
 <style>
 .header-homePage{
