@@ -1,4 +1,4 @@
-.header-homePage{
+.header-homePage {
     width: 100%;
     height: 1.3cm;
     font-size: 20px;
@@ -6,44 +6,53 @@
     box-sizing: border-box;
     display: flex;
 }
-.left-header{
-   width: 50%;
-   height: 1.3cm;
-   margin-top: 8px;
+
+.left-header {
+    width: 50%;
+    height: 1.3cm;
+    margin-top: 8px;
 }
-.right-header{
+
+.right-header {
     height: 1.3cm;
     display: flex;
     width: 50%;
-    align-items:center;
-   justify-content:flex-end;
-   vertical-align: middle;
+    align-items: center;
+    justify-content: flex-end;
+    vertical-align: middle;
 }
-.right-header a{
-color: white;
-margin-right: 2%;
+
+.right-header a {
+    color: white;
+    margin-right: 2%;
 }
-.btnLogin{
+
+.btnLogin {
+    color: aliceblue;
     float: right;
     height: 1cm;
     margin-right: 2%;
 }
-.btnSingin{
+
+.btnSingin {
     margin-right: 5%;
+    color: aliceblue;
 }
-.icons-logout{
+
+.icons-logout {
     float: right;
     font-size: 34px;
     height: 1cm;
     margin-right: 2%;
 }
 
-.body-home{
+.body-home {
     width: 200px;
     height: 300px;
     background-color: red;
 }
-.btn-logout{
+
+.btn-logout {
     text-transform: none;
     background: none;
     outline: none;
@@ -51,15 +60,18 @@ margin-right: 2%;
     box-sizing: border-box;
     border: none;
 }
-.image-user{
-    border:2px solid whitesmoke;
-    border-radius:50%;
+
+.image-user {
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
 }
-.carts-order{
+
+.carts-order {
     margin-top: 50px;
-    color:red;
+    color: red;
 }
-.btn-search{
+
+.btn-search {
     width: 10%;
     height: 40px;
     outline: none;
@@ -67,268 +79,283 @@ margin-right: 2%;
     border-radius: 5px;
     outline-color: aqua;
     border-color: aqua;
-    border:2px solid aqua;
+    border: 2px solid aqua;
 }
+
 @media screen and (min-width: 1400px) {
-   .image-user{
-    width:46px;
-    height:46px;
-   }
-   .btn-logout{
-       width: 50px;
-       height: 50px;
-       font-size: 30px;
-   }
-   .name-shop{
-     font-size: 24px;
-   }
-   .icons-logout{
-    font-size: 40px;
-}
-.btnLogin{
-    font-size: 34px;
-}
-.btnSingin{
-    font-size: 34px;
-}
-.carts-order{
-    font-size:50px;
-   
-}
-}
-@media screen and (max-width: 1400px) {
-    .image-user{
-     width:40px;
-     height:40px;
+    .image-user {
+        width: 46px;
+        height: 46px;
     }
-    .btn-logout{
+    .btn-logout {
         width: 50px;
         height: 50px;
         font-size: 30px;
     }
-    .name-shop{
+    .name-shop {
         font-size: 24px;
-           }
-           .icons-logout{
-            font-size: 40px;
-        }
-        .btnLogin{
-            font-size: 34px;
-        }
-        .btnSingin{
-            font-size: 34px;
-        }
-        .carts-order{
-            font-size:50px;
-        }
- }
- @media screen and (max-width: 1000px) {
-    .image-user{
-     width:35px;
-     height:35px;
-    } 
-    .btn-logout{
+    }
+    .icons-logout {
+        font-size: 40px;
+    }
+    .btnLogin {
+        font-size: 34px;
+    }
+    .btnSingin {
+        font-size: 34px;
+    }
+    .carts-order {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .image-user {
+        width: 40px;
+        height: 40px;
+    }
+    .btn-logout {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .name-shop {
+        font-size: 24px;
+    }
+    .icons-logout {
+        font-size: 40px;
+    }
+    .btnLogin {
+        font-size: 34px;
+    }
+    .btnSingin {
+        font-size: 34px;
+    }
+    .carts-order {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .image-user {
+        width: 35px;
+        height: 35px;
+    }
+    .btn-logout {
         width: 45px;
         height: 45px;
         font-size: 31px;
         margin-top: 5px;
     }
-    .name-shop{
+    .name-shop {
         font-size: 22px;
-        }
-        .icons-logout{
-            font-size: 35px;
-        }
-        .btnLogin{
-            font-size: 30px;
-        }
-        .btnSingin{
-            font-size: 30px;
-        }
-        .carts-order{
-            font-size:45px;
-        }
- }
- @media screen and (max-width: 800px) {
-    .image-user{
-     width:30px;
-     height:30px;
     }
-    .btn-logout{
+    .icons-logout {
+        font-size: 35px;
+    }
+    .btnLogin {
+        font-size: 30px;
+    }
+    .btnSingin {
+        font-size: 30px;
+    }
+    .carts-order {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .image-user {
+        width: 30px;
+        height: 30px;
+    }
+    .btn-logout {
         width: 40px;
         height: 40px;
         font-size: 28px;
         margin-top: 9px;
     }
-    .name-shop{
+    .name-shop {
         font-size: 20px;
-           }
-           .icons-logout{
-            font-size: 30px;
-        }
-        .btnLogin{
-            font-size: 26px;
-        }
-        .btnSingin{
-            font-size: 26px;
-        }
-        .carts-order{
-            font-size:40px;
-        }
-        .btn-search{
-            width: 50px;
-        }
-        
- }
- @media screen and (max-width: 600px) {
-    .image-user{
-     width:25px;
-     height:25px;
     }
-    .btn-logout{
+    .icons-logout {
+        font-size: 30px;
+    }
+    .btnLogin {
+        font-size: 26px;
+    }
+    .btnSingin {
+        font-size: 26px;
+    }
+    .carts-order {
+        font-size: 40px;
+    }
+    .btn-search {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-user {
+        width: 25px;
+        height: 25px;
+    }
+    .btn-logout {
         width: 35px;
         height: 35px;
         font-size: 25px;
         margin-top: 13px;
     }
-    .name-shop{
+    .name-shop {
         font-size: 18px;
-           }
-           .icons-logout{
-            font-size: 25px;
-        }
-        .btnLogin{
-            font-size: 24px;
-        }
-        .btnSingin{
-            font-size: 24px;
-        }
-        .carts-order{
-            font-size:35px;
-        }
-        .btn-search{
-            width: 50px;
-        }
- }
- 
- @media screen and (max-width: 400px) {
-    .image-user{
-     width:20px;
-     height:20px;
     }
-    .btn-logout{
+    .icons-logout {
+        font-size: 25px;
+    }
+    .btnLogin {
+        font-size: 24px;
+    }
+    .btnSingin {
+        font-size: 24px;
+    }
+    .carts-order {
+        font-size: 35px;
+    }
+    .btn-search {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image-user {
+        width: 20px;
+        height: 20px;
+    }
+    .btn-logout {
         width: 30px;
         height: 30px;
         font-size: 23px;
         margin-top: 15px;
-
     }
-    .name-shop{
+    .name-shop {
         font-size: 16px;
-           }
-           .icons-logout{
-            font-size: 20px;
-        }
-        .btnLogin{
-            font-size: 22px;
-        }
-        .btnSingin{
-            font-size: 22px;
-        }
-        .carts-order{
-            font-size:30px;
-        }
-        .btn-search{
-            width: 50px;
-        }
- }
- @media screen and (max-width: 200px) {
-    .image-user{
-     width:18px;
-     height:18px;
     }
-    .btn-logout{
+    .icons-logout {
+        font-size: 20px;
+    }
+    .btnLogin {
+        font-size: 22px;
+    }
+    .btnSingin {
+        font-size: 22px;
+    }
+    .carts-order {
+        font-size: 30px;
+    }
+    .btn-search {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .image-user {
+        width: 18px;
+        height: 18px;
+    }
+    .btn-logout {
         width: 25px;
         height: 25px;
         font-size: 20px;
         margin-top: 15px;
-        
     }
-    .name-shop{
+    .name-shop {
         font-size: 14px;
-           }
-           .icons-logout{
-            font-size: 15px;
-        }
-        .btnLogin{
-            font-size: 20px;
-        }
-        .btnSingin{
-            font-size: 20px;
-        }
-        .carts-order{
-            font-size:25px;
-        }
- }
- .link-romove-home{
-     color: whitesmoke;
-     text-decoration: none;
- }
-     a:link,a:visited {
-        color: whitesmoke;
-        text-decoration: none;
-      }
+    }
+    .icons-logout {
+        font-size: 15px;
+    }
+    .btnLogin {
+        font-size: 20px;
+    }
+    .btnSingin {
+        font-size: 20px;
+    }
+    .carts-order {
+        font-size: 25px;
+    }
+}
+
+.link-romove-home {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
 /* logo */
-.logo-shop{
+
+.logo-shop {
     width: 100%;
     height: 155px;
     box-sizing: content-box;
 }
-.left-logo{
+
+.left-logo {
     float: left;
     width: 30%;
     box-sizing: content-box;
 }
-.center-logo{
+
+.center-logo {
     float: left;
     width: 40%;
 }
-.right-logo{
+
+.right-logo {
     float: left;
     width: 30%;
 }
-.logo-image{
+
+.logo-image {
     height: 155px;
     width: 60%;
 }
+
+
 /* center logo */
-.form-search{
-text-align: center;
-margin-top: 50px;
+
+.form-search {
+    text-align: center;
+    margin-top: 50px;
 }
-.input-search{
+
+.input-search {
     width: 60%;
     height: 40px;
-    border:2px solid aqua;
+    border: 2px solid aqua;
     outline-style: none;
     outline-color: aqua;
     border-radius: 10px;
 }
 
+
 /* right logo */
-.right-logo{
+
+.right-logo {
     text-align: center;
 }
+
+
 /* Menu */
-.menu{
+
+.menu {
     display: flex;
     width: 100%;
     height: 50px;
-    min-height:5vh;
+    min-height: 5vh;
     background-color: slategray;
     float: left;
     vertical-align: middle;
-    align-items:center;
+    align-items: center;
     color: whitesmoke;
     padding-left: 50px;
 }

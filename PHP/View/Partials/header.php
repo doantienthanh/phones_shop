@@ -3,7 +3,7 @@ require_once('../index.php');
 ?>
 <div class="header-homePage">
  <ul class="left-header">
- <a href="../Users/homePage.php" class="link-romove-home"><p class="name-shop">thanhdoanShops</p></a>
+ <a href="../Users/homePage.php" class="link-romove-home" style="color:white;"><p class="name-shop">thanhdoanShops</p></a>
  </ul>
  <ul class="right-header">
 <?php
@@ -26,8 +26,8 @@ if (isset($_COOKIE['id_user'])) {
         }
     }
 }else{
-  echo '<a href="../Users/login.php"><i class="fas fa-user-alt btnLogin" id="btnLogin" name="btnLogin"></i></a>
-  <a href="../Users/register.php"><i class="fa fa-sign-in btnSingin" id="btnLogout"></i></a>';
+  echo '<a href="../Users/login.php" class="link-headers" style="color:white;"><i class="fas fa-user-alt btnLogin" id="btnLogin" name="btnLogin"></i></a>
+  <a href="../Users/register.php" class="link-headers" style="color:white;"><i class="fa fa-sign-in btnSingin" id="btnLogout"></i></a>';
 }
 ?>
 </ul>

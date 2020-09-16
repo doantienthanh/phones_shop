@@ -12,6 +12,9 @@
 <link rel="stylesheet" href="../../../CSS/Login.css">
 <link rel="stylesheet" href="../../../Css/Register.css">
 <link rel="stylesheet" href="../../../Css/Body_HomePage.css">
+<link rel="stylesheet" href="../../../Css/Category.css">
+<link rel="stylesheet" href="../../../Css/Card_Products.css">
+
 <title>shop phones</title>
 <style>
 .header-homePage{

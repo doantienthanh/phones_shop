@@ -36,6 +36,7 @@ $create_products_table='CREATE TABLE IF NOT EXISTS products(
       id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
       id_categories INT NOT NULL,
       id_brands INT NOT NULL,
+      slug_products VARCHAR(200)NOT NULL UNIQUE,
       name_products VARCHAR(200)NOT NULL UNIQUE,
       image_products VARCHAR(200)NOT NULL UNIQUE,
       quantity_products INT NOT NULL,

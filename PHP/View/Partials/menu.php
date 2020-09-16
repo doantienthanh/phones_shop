@@ -1,5 +1,5 @@
 <div class="menu">
 <div class="menu-item">
-<b>HOME</b>
+<a href="" style="color:red;"><b>HOME</b></a>
 </div>
 </div>

@@ -37,9 +37,14 @@ VALUES ('APPLE','2000-05-20'),
 ('NOKIA','2000-05-20')";
  mysqli_query($useData, $list_data_brands);
 // INSERT INTO PRODUCTS
-$list_data_products = "INSERT INTO products(id_brands,id_categories,name_products,image_products,quantity_products,price_products,status,date_start)
-VALUES (1,1,'IPHONE 11 PRO','iphone11.png',10,18000000,1,'2000-05-20'),
-(1,1,'IPHONE 10 PRO','iphone10.png',10,15000000,1,'2000-05-20'),
-(2,1,'OPPO A65','oppo.png',10,15000000,1,'2000-05-20'),
-(3,1,'XIAOMI  X PRO','xiaomi.png',10,15000000,1,'2000-05-20')";
+$list_data_products = "INSERT INTO products(id_brands,id_categories,slug_products,name_products,image_products,quantity_products,price_products,status,date_start)
+VALUES (1,1,'iphone-11-pro','IPHONE 11 PRO','iphone11pro.jpg',10,18000000,1,'2000-05-20'),
+(1,1,'iphone-10-pro','IPHONE 10 PRO','iphone10.png',10,15000000,1,'2000-05-20'),
+(2,1,'oppo-a56','OPPO A65','oppo.jpg',10,15000000,1,'2000-05-20'),
+(3,1,'xiaomi-x-pro','XIAOMI  X PRO','xiaomi.png',10,15000000,1,'2000-05-20')";
  mysqli_query($useData, $list_data_products);
+//  if ($useData->query($list_data_products) === TRUE) {
+//     echo "New record created successfully";
+//   } else {
+//     echo "Error: " . $list_data_products . "<br>" . $useData->error;
+//   }
