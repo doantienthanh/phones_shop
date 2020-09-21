@@ -1,0 +1,36 @@
+.all-products{
+    width: 85%;
+    font-size: 22px;
+    height: 600px;
+}
+.titial-table-products{
+    width: 90%;
+    margin-left: 5%;
+}
+.table-list-products{
+    height: 550px;
+    overflow-y: auto;
+}
+.table-products tr{
+    width: 100%;
+}
+.table-products tr td {
+    border: 1px solid #eee;
+    word-wrap: break-word;
+  }
+.table-products{
+    width: 100%;
+    text-align: center;
+}
+.table-products td{
+    width:100px;
+    border: 1px solid #eee;
+}
+.table-products th {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width:100px;
+    border: 1px solid #eee;
+  }
+ 

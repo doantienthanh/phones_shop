@@ -11,10 +11,12 @@
 <link rel="stylesheet" href="../../../CSS/HomePage.css">
 <link rel="stylesheet" href="../../../CSS/Login.css">
 <link rel="stylesheet" href="../../../Css/Register.css">
-<link rel="stylesheet" href="../../../Css/Body_HomePage.css">
+<link rel="stylesheet" href="../../../Css/BodyHomePage.css">
 <link rel="stylesheet" href="../../../Css/Category.css">
-<link rel="stylesheet" href="../../../Css/Card_Products.css">
-
+<link rel="stylesheet" href="../../../Css/CardProducts.css">
+<link rel="stylesheet" href="../../../Css/Detail.css">
+<link rel="stylesheet" href="../../../Css/MenuAdmin.css">
+<link rel="stylesheet" href="../../../Css/ProductsPage.css">
 <title>shop phones</title>
 <style>
 .header-homePage{
@@ -29,6 +31,11 @@
 }
 .form-register{
   height: 630px;
+}
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
 }
 </style>
 </head>

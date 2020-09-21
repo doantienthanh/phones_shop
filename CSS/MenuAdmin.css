@@ -1,0 +1,18 @@
+.body-admin{
+    width: 100%;
+    display: flex;
+}
+.menu-admin{
+    width: 15%;
+    height: 800px;
+    background-color: slategray;
+    color: white;
+    font-size: 24px;  
+}
+.first-item{
+    padding-top: 12px;
+}
+.menu-item-admin{
+    margin-left: 10%;
+    display: block;
+}

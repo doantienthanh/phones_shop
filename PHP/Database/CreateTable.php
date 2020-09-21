@@ -50,4 +50,21 @@ $create_products_table='CREATE TABLE IF NOT EXISTS products(
       FOREIGN KEY (id_brands) REFERENCES brands(id) ON DELETE CASCADE 
 )';
 mysqli_query($useData,$create_products_table);
+// Table detail products 
+$create_details_table='CREATE TABLE IF NOT EXISTS details(
+   id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   id_products INT NOT NULL UNIQUE,
+   FOREIGN KEY (id_products) REFERENCES products(id) ON DELETE CASCADE,
+   color_phone VARCHAR(220),
+   size_screen_phone VARCHAR(255),
+   resolution_phone VARCHAR(255),
+   weight_phone VARCHAR(255),
+   memory_phone VARCHAR(255),
+   operating_system VARCHAR(220) NOT NULL,
+   camera_phone VARCHAR (300),
+   pin_phone VARCHAR (200),
+   description_phone VARCHAR(255) 
+)';
+mysqli_query($useData,$create_details_table);
+
 ?>

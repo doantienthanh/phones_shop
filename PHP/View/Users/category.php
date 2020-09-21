@@ -20,10 +20,10 @@ include_once('../Partials/brands.php');
             <?php
  if(isset($_GET['category'])){
     $id_brands=$_GET['category'];
-    $select_product="SELECT * FROM products WHERE id_brands=$id_brands";
+    $select_product="SELECT * FROM products,details WHERE id_brands=$id_brands AND products.id=details.id_products";
     $list_product=$useData->query($select_product);
     foreach($list_product as $item){
-        if($item['discount']!=null){
+        if($item['discount']!=null){ 
               echo '
               <a href="detail.php?products_id='.$item['slug_products'].'" class="link-items"> 
               <div class="card-products">
@@ -33,8 +33,9 @@ include_once('../Partials/brands.php');
                   </div>
                   <div class="body-card" style="margin-top:5%;">
                     <h4  class="tetx-center"><b>'.$item['name_products'].'</b></h4>
-                    <p style="color:black;font-size:11px;"><b style="color:red;font-size:16px;">'.number_format($item['price_products'])." VND".'</b> <strike>'.number_format($item['old_price_products'])." VND".'</strike> </p>
-                    <p style="font-size:14px;word-wrap:break-word;">'.$item['description'].'</p>
+                    <b style="color:black;font-size:11px;"><b style="color:red;font-size:16px;">'.number_format($item['price_products'])." VND".'</b> <strike>'.number_format($item['old_price_products'])." VND".'</strike> </b>
+                    <p style="font-size:14px;word-wrap:break-word;"> <b>Dung lượng:</b> '.$item['memory_phone'].' GB</p>
+                    <p style="font-size:14px;word-wrap:break-word;margin-bottom:20px;">'.$item['description'].'</p>
                     </div>
                   <div class="Footer-card">
                   <p>
@@ -43,7 +44,7 @@ include_once('../Partials/brands.php');
                   <i class="fas fa-star" style="color: darkgoldenrod;font-size:18px;"></i>
                   <i class="fas fa-star-half-alt" style="color: darkgoldenrod;font-size:18px;"></i>
                   <i class="far fa-star" style="color: darkgoldenrod;font-size:18px;"></i>
-                  </p>
+                   </p>
                   </div>
               </div>
            </a>';
@@ -57,7 +58,8 @@ include_once('../Partials/brands.php');
                   </div>
                   <div class="body-card" style="margin-top:5%;">
                     <h4  class="tetx-center"><b>'.$item['name_products'].'</b></h4>
-                    <p><b style="color:red;font-size:16px;">'.number_format($item['price_products'])." VND".'</b></p>
+                    <b><b style="color:red;font-size:16px;">'.number_format($item['price_products'])." VND".'</b></b>
+                    <p style="font-size:14px;word-wrap:break-word;"> <b>Dung lượng:</b> '.$item['memory_phone'].' GB</p>
                     <p style="font-size:14px;word-wrap:break-word;">'.$item['description'].'</p>
                   </div>
                   <div class="Footer-card">

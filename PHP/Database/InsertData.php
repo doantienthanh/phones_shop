@@ -43,8 +43,10 @@ VALUES (1,1,'iphone-11-pro','IPHONE 11 PRO','iphone11pro.jpg',10,18000000,1,'200
 (2,1,'oppo-a56','OPPO A65','oppo.jpg',10,15000000,1,'2000-05-20'),
 (3,1,'xiaomi-x-pro','XIAOMI  X PRO','xiaomi.png',10,15000000,1,'2000-05-20')";
  mysqli_query($useData, $list_data_products);
-//  if ($useData->query($list_data_products) === TRUE) {
-//     echo "New record created successfully";
-//   } else {
-//     echo "Error: " . $list_data_products . "<br>" . $useData->error;
-//   }
+// INSERT DETAIL PRODUCT
+$list_data_detail = "INSERT INTO details(id_products,operating_system)
+VALUES (1,'ADROID'),
+(2,'ADROID'),
+(3,'ADROID'),
+(4,'ADROID')";
+ mysqli_query($useData, $list_data_detail);

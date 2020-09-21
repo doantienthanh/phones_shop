@@ -19,6 +19,7 @@ function login($useData)
                 $cookie_name='id_user';
                 setcookie($cookie_name,$id_enCode,time() + 3600, '/');
                 if($user['position']=='admin'){
+                    header('location:../../View/Admin/dashboard.php');
                 }else{
                   header('location:../../View/Users/homePage.php');
                 }

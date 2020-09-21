@@ -15,7 +15,6 @@
         transition: .3s;
         box-sizing: border-box;
     }
-    
     .card-products:hover {
         width: 255px;
         height: 405px;

@@ -13,51 +13,33 @@ include_once('../Partials/menu.php');
 include_once('../Partials/brands.php');
 ?>
     </div>
-    <!-- <div class="slide-content">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="../../../IMAGE/kenvin.jpg" class="image-slide">
-            <div class="text">Caption Text</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="../../../IMAGE/avata.jpg" class="image-slide">
-            <div class="text">Caption Two</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="../../../IMAGE/logo.png" class="image-slide">
-            <div class="text">Caption Three</div>
-        </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <script>
-        var slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
-        }
-        </script>
-    </div> -->
+<div class="slide-products">
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../../IMAGE/iphone11pro.jpg" width="50%" height="700px"> 
+    </div>
+    <div class="carousel-item">
+      <img src="../../../IMAGE/oppo.jpg" width="50%" height="700px">
+        
+    </div>
+    <div class="carousel-item">
+      <img src="../../../IMAGE/xiaomi.png" width="50%" height="700px">   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
