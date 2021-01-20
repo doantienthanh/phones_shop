@@ -31,6 +31,7 @@
 }
 .form-register{
   height: 630px;
+  width: 100%;
 }
 a:link,
 a:visited {
